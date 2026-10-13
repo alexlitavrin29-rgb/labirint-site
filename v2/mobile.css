@@ -1,0 +1,69 @@
+/* Mobile keeps the same story and palette with a lighter rendering path. */
+.mobile-hero{display:none;position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+/* ScrollTrigger restores its own position while rebuilding responsive pins. */
+.home-page{overflow-anchor:none}
+html[data-render-mode=light] .mobile-hero{display:block}
+html[data-render-mode=light] .hero-object canvas{visibility:hidden}
+html[data-render-mode=light] .hero-object .object-fallback{display:none}
+html[data-render-mode=light] .profile-volume canvas{display:none}
+html[data-render-mode=light] .profile-volume .profile-volume-fallback{display:block}
+@media(max-width:760px){
+ html{scroll-behavior:auto}
+ .home-page .header{background:var(--paper);backdrop-filter:none;-webkit-backdrop-filter:none}
+ /* Native sticky follows touch scrolling and viewport changes without a stale GSAP pin box. */
+ .home-page .is-pitch-animated{
+  --pitch-scene-height:clamp(440px,calc(100svh - var(--pitch-header,76px)),1000px);
+  height:calc(var(--pitch-scene-height) + var(--pitch-travel,1800px));overflow:clip;
+ }
+ .home-page .is-pitch-animated .pitch-scene{
+  position:sticky;top:var(--pitch-header,76px);height:var(--pitch-scene-height);
+  min-height:0;max-height:none;
+ }
+ /* Margins center the button independently of GSAP's transform animation. */
+ .home-page .is-pitch-animated .pitch-cta{
+  bottom:24px;left:0;right:0;width:max-content;max-width:100%;margin-inline:auto;transform:none;
+ }
+
+ .mobile-hero{display:block}.hero-object canvas,.hero-object .object-fallback{display:none}
+ .profile-volume canvas{display:none}.profile-volume .profile-volume-fallback{display:block}
+ .home-page .hero .actions{align-items:flex-start;flex-direction:column;gap:14px}
+ .home-page .hero .button{min-height:48px;max-width:100%;white-space:normal}
+ .home-page .hero-scroll-cue{display:none}
+ .home-page .hero-scroll .hero-art{height:280px;margin-top:28px}
+ .home-page .hero-scroll .hero-object{inset:0 7%}
+ .home-page .orbit-label{padding:7px 9px;font-size:10px}
+ .home-page .profile-panel{padding:28px 0;margin:0;border-top:1px solid color-mix(in srgb,var(--ink) 16%,transparent)}
+ .home-page .profile-panel h3{font-size:clamp(30px,8vw,43px)}
+ .home-page .profile-composition{gap:24px}
+ .home-page .profile-visual{grid-row:1;height:300px}
+ .home-page .profile-copy{grid-row:2}
+ .home-page .profile-ending{padding:55px 0 15px;min-height:0;text-align:center}
+ .home-page .profile-ending h3{font-size:clamp(37px,10vw,64px)}
+ .home-page .profile-ending .profile-personal{max-width:100%}
+ .home-page .profile-footer,.home-page .skills-footer{display:none}
+ .home-page .skill-beat{gap:22px;padding:36px 0}
+ .home-page .skill-number{font-size:46px}
+ .home-page .skill-copy h3{font-size:clamp(28px,7.2vw,44px);line-height:1.18}
+ .home-page .skill-copy p{margin-top:18px;font-size:17px}
+ .home-page .skill-beat:last-child{padding-bottom:0}
+ .home-page .skills-section{padding-bottom:35px}
+ .home-page .training-result{padding-bottom:110px}
+ .home-page .expert-photo img{width:100%}
+ .home-page .apply-dialog{max-height:calc(100dvh - 32px);overflow-y:auto}
+ .home-page .apply-dialog input{font-size:16px;min-height:48px}
+ .home-page .apply-dialog::backdrop{backdrop-filter:none}
+ .home-page .dialog-close{min-width:44px;min-height:44px}
+ .home-page .menu-button{min-height:44px}
+ .home-page .text-link{display:inline-flex;align-items:center;min-height:44px}
+ .home-page .program-practice span{font-size:14px}
+ .home-page .certificate{overflow:hidden}
+}
+@media(max-height:599px){
+ .home-page .apply-dialog{max-height:calc(100dvh - 20px);overflow-y:auto}
+ .home-page .apply-dialog input{font-size:16px;min-height:44px}
+ .home-page .header{backdrop-filter:none;-webkit-backdrop-filter:none;background:var(--paper)}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ .home-page *, .home-page *::before, .home-page *::after{animation:none!important;transition:none!important}
+}

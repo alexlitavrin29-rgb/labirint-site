@@ -1,0 +1,13 @@
+# Profile story and copy refinement
+
+User requested a dimensional version of their pitch's susceptibility illustration after the training bridge and before the program. Keep the existing agreement/justification hook. Use the site's blue/cream/yellow palette. End with “А как это происходит у вас?”.
+
+Implemented a deformed Three.js surface with pearl-like shading and four fine meridian seams. SVG influence paths and six labels surround it. GSAP highlights authority, haste and emotion in sequence, then reveals the personal question and a link to the program. The graphic illustrates susceptibility; it is not a test result.
+
+The scroll length is 1100 px on desktop, 900 px on mobile. On low screens, with reduced motion, or without JavaScript, all story panels remain in document flow. A CSS volume remains visible if WebGL is unavailable. Rendering stops outside the viewport and while the document is hidden.
+
+Shortened the hero description, removed the reassurance paragraph and plus-sign facts, retaining one compact fact line. The shorter copy naturally places the headline lower. Improved teacher heading and described the included tool as an author-designed test. Certificate copy now connects it to the learning/practice path. Kept its formal label “о прохождении тренинга”. Aligned repeated test/certificate copy on the course page. Updated only the program's introductory sentence; all three module cards and the original pressure animation remain.
+
+Verification: profile-story.cjs covers placement, renderer startup, all four reading beats, desktop/mobile, reverse scroll, short screens, reduced motion and no-JS fallback. Existing design-smoke.cjs, editorial-flow.cjs and scroll-motion.cjs passed. Verified HTML nesting and JS syntax. Screenshots are in .preview/profile-story-desktop.png, profile-story-mobile.png, profile-question-desktop.png and human-copy-desktop.png. Independent review requested through requesting-code-review.
+
+Independent review identified three issues, all resolved: renderers now pause rather than dispose when entering the browser's back-forward cache; the mobile text area accommodates the final question at 320×600; text panels use opacity transitions so the full story stays available to screen readers. The ending link remains hidden until its beat appears. The history regression verified that both the hero and profile renderers resume after Back and resize correctly. All five scripts passed: design-smoke.cjs, editorial-flow.cjs, scroll-motion.cjs, profile-story.cjs and history-rendering.cjs. Final mobile screenshot inspected after the spacing adjustment.

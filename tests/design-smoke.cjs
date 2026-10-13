@@ -1,0 +1,46 @@
+const { chromium } = require('playwright');
+const assert = require('node:assert/strict');
+(async () => {
+  const browser = await chromium.launch({headless:true, executablePath:process.env.CHROME_PATH || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', args:['--no-sandbox']});
+  try {
+    const page = await browser.newPage({viewport:{width:1440,height:960}});
+    const errors=[]; page.on('pageerror', e=>errors.push(e.message));
+    await page.goto('http://127.0.0.1:8765/v2/index.html?theme=warm');
+    assert.equal(await page.locator('[data-theme="blue"]').count(),1,'Оба варианта доступны для сравнения');
+    assert(await page.locator('h1').isVisible(),'Заголовок виден сразу');
+    const cta=await page.locator('.nav-apply').boundingBox();
+    assert(cta.y+cta.height<=960,'Заявка доступна в навигации первого экрана');
+    await page.locator('[data-theme="blue"]').click();
+    assert.equal(await page.locator('html').getAttribute('data-palette'),'blue');
+    await page.reload();
+    assert.equal(await page.locator('html').getAttribute('data-palette'),'blue','Выбранная палитра сохраняется');
+    await page.evaluate(()=>document.fonts.ready);await page.waitForSelector('.hero-object.is-ready');await page.waitForTimeout(1000);
+    await page.screenshot({path:'.preview/human-copy-desktop.png'});
+    await page.locator('#training-intro a[href="#program"]').click();
+    assert.equal(new URL(page.url()).hash,'#program','Первый экран ведёт к программе на той же странице');
+    await page.locator('.footer-main [data-course-link]').first().click();
+    await page.waitForURL('**/course.html**');
+    assert.equal(await page.locator('html').getAttribute('data-palette'),'blue','Палитра сохраняется на странице тренинга');
+    await page.locator('#faq details').first().locator('summary').click();
+    assert(await page.locator('#faq details').first().getAttribute('open')!==null);
+    await page.locator('[data-apply]').first().click();
+    assert(await page.locator('dialog').isVisible());
+    await page.locator('[data-close]').click();
+    assert(!(await page.locator('dialog').isVisible()));
+    await page.setViewportSize({width:390,height:844});
+    await page.goto('http://127.0.0.1:8765/v2/index.html');
+    await page.evaluate(()=>document.fonts.ready);await page.waitForFunction(()=>document.querySelector('.mobile-hero').naturalWidth>0);await page.waitForTimeout(500);
+    await page.screenshot({path:'.preview/human-copy-mobile.png'});
+    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Без горизонтального скролла на телефоне');
+    await page.locator('.menu-button').click();
+    assert.equal(await page.locator('.menu-button').getAttribute('aria-expanded'),'true');
+    await page.locator('.nav-links a[href="#programs"]').click();
+    assert.equal(await page.locator('.menu-button').getAttribute('aria-expanded'),'false');
+    await page.emulateMedia({reducedMotion:'reduce'});
+    await page.reload();
+    assert.equal(await page.locator('.pin-spacer').count(),0,'Reduced motion: нет закреплённой анимации');
+    for(const heading of await page.locator('#pressure h2').all()) assert(await heading.isVisible());
+    assert.deepEqual(errors,[],'Нет ошибок JavaScript');
+    console.log('PASS: CTA, темы и переходы, FAQ, диалог, мобильное меню, ширина и reduced motion');
+  } finally {await browser.close();}
+})().catch(e=>{console.error(e);process.exit(1)});

@@ -1,0 +1,66 @@
+/* One type system for the hero, scrolling sentence and training introduction. */
+.home-page .hero{height:auto;min-height:calc(100svh - 146px);max-height:none;padding-block:48px 64px;grid-template-columns:1.1fr 1fr;gap:40px;overflow:clip}
+.home-page .hero h1{font-size:clamp(42px,4.4vw,66px);font-weight:550;line-height:1.13;letter-spacing:-.055em;margin-right:0;max-width:700px}
+.home-page .hero .eyebrow{font-size:10px;line-height:1.6;max-width:390px;margin-bottom:32px}
+.home-page .hero h1 .soft-emphasis{font-family:inherit;font-size:1em;font-style:normal;font-weight:400;line-height:inherit;letter-spacing:inherit}
+.home-page .hero .hero-art{height:min(620px,65svh);margin:0;outline-offset:12px;border-radius:50%}
+.hero-hover-cue{position:absolute;bottom:0;right:12%;font-size:11px;color:var(--muted);z-index:3}
+.training-intro{padding-block:20px 64px}
+.trust-marquee{padding-block:40px;overflow:clip}
+.marquee-window{overflow:hidden}
+.marquee-phrase{position:relative;width:calc(100% - 112px);max-width:1280px;margin-inline:auto;font:500 clamp(30px,4.6vw,66px)/1.25 var(--body-font);letter-spacing:-.045em}
+.marquee-hook,.marquee-name,.marquee-qualification{font:inherit;color:inherit;border:0;padding:0;vertical-align:baseline}
+.is-marquee-animated.trust-marquee{height:calc(100svh - var(--trust-header,96px));padding:0;display:flex;align-items:center}
+.is-marquee-animated .marquee-window{width:100%;mask-image:linear-gradient(to right,transparent,#000 5%,#000 95%,transparent)}
+.is-marquee-animated .marquee-track{width:max-content;will-change:transform}
+.is-marquee-animated .marquee-phrase{font-size:clamp(42px,5.1vw,74px);width:auto;max-width:none;margin:0;white-space:nowrap;line-height:1.4}
+.marquee-readable{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.marquee-visual{display:flex;align-items:center;gap:.2em;padding:64px 0}
+.marquee-word{display:inline-block;position:relative;white-space:nowrap}
+.marquee-letter{display:inline-block;transform-origin:50% 80%}
+.is-marquee-animated .marquee-hook,.is-marquee-animated .marquee-name,.is-marquee-animated .marquee-qualification{position:relative;display:inline-block}
+.is-marquee-animated .marquee-hook{padding:.02em .22em;background:var(--highlight);border-radius:.13em;transform:rotate(-3deg);margin-inline:.12em;font-weight:650}
+.is-marquee-animated .marquee-name{padding:.14em .22em;background:var(--blue);border-radius:.13em;transform:rotate(2deg);margin-inline:.12em;line-height:1.15}
+.marquee-given{display:block;position:relative;font-size:.48em;letter-spacing:-.025em;margin-bottom:.14em}
+.marquee-surname{display:block;position:relative;font-weight:600}
+.marquee-profession{position:relative;display:inline-block;font-style:italic;font-size:.86em;letter-spacing:-.035em;margin-right:.2em}
+.marquee-degree{position:relative;display:inline-block;font-size:.6em;letter-spacing:-.015em;border:1px solid var(--ink);border-radius:100px;padding:.25em .65em;transform:rotate(-2deg);vertical-align:middle}
+.intro-offer{display:grid;grid-template-columns:350px 1fr;gap:clamp(48px,6vw,88px);align-items:center;padding:40px;background:var(--surface);border:1px solid var(--line);border-radius:28px}
+.intro-teacher{display:flex;flex-direction:column;align-items:flex-start;gap:20px;min-width:0;text-align:left}
+.intro-portrait{margin:0;width:350px;max-width:100%}
+.intro-portrait img{display:block;width:100%;height:390px;object-fit:cover;object-position:50% 35%;border-radius:16px}
+.intro-portrait figcaption{font-size:11px;line-height:1.4;margin-top:10px;color:var(--muted)}
+.intro-name{font-size:32px;line-height:1.14;font-weight:500;letter-spacing:-.035em}
+.intro-credentials{font-size:13px;line-height:1.6;color:var(--muted);margin-top:10px}
+.intro-teacher-copy .text-link{font-size:12px;margin-top:12px}
+.intro-offer-copy{min-width:0}
+.intro-facts{display:inline-block;font-size:12px;line-height:1.6;letter-spacing:.025em;color:var(--muted);padding:8px 12px;border:1px solid var(--line);border-radius:8px;margin:0 0 24px}
+.intro-reveal{font-size:clamp(28px,2.45vw,36px);line-height:1.4;letter-spacing:-.035em;font-weight:400;max-width:620px}
+.intro-practice{display:flex;flex-direction:column;gap:28px;margin-top:30px}
+.intro-practice-stat{display:flex;align-items:center;gap:24px;font-size:14px;line-height:1.65;padding-block:22px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.intro-practice-stat strong{font-size:60px;line-height:1;font-weight:500;letter-spacing:-.06em}
+.intro-enquiry .actions{flex-direction:column;align-items:flex-start;gap:14px}
+.intro-enquiry .button{font-size:13px;white-space:normal;text-align:left;max-width:100%;gap:24px;min-height:56px;padding:16px 24px}
+.intro-enquiry .text-link{font-size:12px}
+.hero-object picture{display:block;position:absolute;inset:0;pointer-events:none}
+.is-idle-rotating .mobile-hero{animation:hero-idle-spin 48s linear infinite;animation-play-state:paused}
+.is-idle-rotating.is-hero-visible .mobile-hero{animation-play-state:running}
+@keyframes hero-idle-spin{to{transform:rotate(360deg)}}
+.is-skills-animated .skill-copy h3{font-size:clamp(36px,min(4.8vw,calc(9svh - 16px)),70px)}
+@media(max-width:1100px){.intro-offer{grid-template-columns:300px 1fr;gap:40px;padding:32px}.marquee-phrase{width:calc(100% - 64px)}.intro-name{font-size:28px}.intro-portrait img{height:350px}.intro-reveal{font-size:27px}.intro-facts{font-size:11px}.intro-practice-stat strong{font-size:54px}}
+@media(min-width:761px) and (max-height:740px){
+ .home-page .hero{padding-block:32px}.home-page .hero h1{font-size:clamp(40px,4vw,58px)}.home-page .hero .hero-art{height:370px}
+ .intro-offer{grid-template-columns:270px 1fr;padding:24px;gap:48px}.intro-portrait{width:270px}.intro-portrait img{height:245px}.intro-teacher{gap:12px}.intro-name{font-size:26px}.intro-credentials{font-size:12px;margin-top:8px}.intro-teacher-copy .text-link{margin-top:8px}
+ .intro-reveal{font-size:29px}.intro-facts{margin-bottom:16px}.intro-practice{margin-top:22px;gap:20px}.intro-practice-stat{padding-block:16px}.intro-practice-stat strong{font-size:52px}
+ .is-skills-animated .skill-copy h3{font-size:clamp(32px,3.6vw,48px)}
+}
+@media(max-width:760px){
+ .home-page .hero{min-height:0;padding-block:40px 32px;gap:28px}.home-page .hero h1{font-size:clamp(34px,8.7vw,46px);line-height:1.16}.home-page .hero .eyebrow{font-size:9px;max-width:290px;margin-bottom:24px}
+ .home-page .hero .hero-art{height:300px;width:100%;max-width:420px;margin:0 auto}.hero-hover-cue{display:none}
+ .training-intro{padding-block:10px 40px}.trust-marquee{padding-block:28px}.marquee-phrase{width:calc(100% - 40px);overflow-wrap:anywhere}
+ .is-marquee-animated .marquee-name{white-space:nowrap;text-align:left}
+ .intro-offer{grid-template-columns:1fr;gap:32px;padding:24px;border-radius:20px}.intro-teacher{gap:16px}.intro-portrait{width:100%}.intro-portrait img{height:320px}.intro-name{font-size:30px}.intro-credentials{font-size:13px}
+ .intro-reveal{font-size:26px}.intro-facts{font-size:11px;margin-bottom:20px;padding:7px 9px}.intro-practice{margin-top:24px;gap:22px}.intro-practice-stat{font-size:12px;gap:18px;padding-block:18px}.intro-practice-stat strong{font-size:52px}
+ .intro-enquiry .button{font-size:12px;gap:14px;padding:15px 18px;width:100%}
+}
+@media(prefers-reduced-motion:reduce){.mobile-hero{animation:none!important}}

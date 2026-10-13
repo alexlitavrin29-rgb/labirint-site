@@ -1,0 +1,341 @@
+{
+  "url": "http://a0091381.xsph.ru/v2/?theme=blue",
+  "conditions": {
+    "width": 390,
+    "height": 844,
+    "dpr": 3,
+    "cpuSlowdown": 4,
+    "downloadBytesPerSecond": 200000,
+    "latencyMs": 150,
+    "coldCache": true,
+    "freshBrowserPerRun": true,
+    "pinnedIPv4": true
+  },
+  "limits": {
+    "lcpMs": 2500,
+    "cls": 0.1,
+    "blockingMs": 200,
+    "tapMs": 200,
+    "frameP95Ms": 33.5,
+    "scrollStalls": 0
+  },
+  "results": [
+    {
+      "run": 1,
+      "fcpMs": 1424,
+      "lcpMs": 1660,
+      "lcpElements": [
+        {
+          "time": 1424,
+          "size": 27473,
+          "element": "<h1>Больше уверенности<br> <span class=\"soft-emphasis\">в сложных разговорах.</span></h1>",
+          "url": ""
+        },
+        {
+          "time": 1660,
+          "size": 73206,
+          "element": "<img class=\"mobile-hero\" src=\"assets/hero-mobile.webp\" width=\"640\" height=\"610\" alt=\"\" aria-hidden=\"true\" decoding=\"async\" fetchpriority=\"high\">",
+          "url": "http://a0091381.xsph.ru/v2/assets/hero-mobile.avif"
+        }
+      ],
+      "cls": 0.0003930729318748456,
+      "blockingMs": 101,
+      "initialBytes": 365917,
+      "tasks": [
+        {
+          "time": 1951.5,
+          "duration": 151
+        }
+      ],
+      "initialCls": 0.0003930729318748456,
+      "shifts": [
+        {
+          "time": 2354.199999988079,
+          "value": 0.0003930729318748456,
+          "sources": [
+            {
+              "previous": {
+                "x": 20,
+                "y": 240.609375,
+                "width": 350,
+                "height": 46,
+                "top": 240.609375,
+                "right": 370,
+                "bottom": 286.609375,
+                "left": 20
+              },
+              "current": {
+                "x": 20,
+                "y": 246.609375,
+                "width": 350,
+                "height": 46,
+                "top": 246.609375,
+                "right": 370,
+                "bottom": 292.609375,
+                "left": 20
+              }
+            }
+          ]
+        }
+      ],
+      "tapMs": 112,
+      "frameP95Ms": 16.799999999999272,
+      "scrollStalls": 0,
+      "frameCount": 748,
+      "passed": true
+    },
+    {
+      "run": 2,
+      "fcpMs": 1296,
+      "lcpMs": 1536,
+      "lcpElements": [
+        {
+          "time": 1296,
+          "size": 27473,
+          "element": "<h1>Больше уверенности<br> <span class=\"soft-emphasis\">в сложных разговорах.</span></h1>",
+          "url": ""
+        },
+        {
+          "time": 1536,
+          "size": 73206,
+          "element": "<img class=\"mobile-hero\" src=\"assets/hero-mobile.webp\" width=\"640\" height=\"610\" alt=\"\" aria-hidden=\"true\" decoding=\"async\" fetchpriority=\"high\">",
+          "url": "http://a0091381.xsph.ru/v2/assets/hero-mobile.avif"
+        }
+      ],
+      "cls": 0.0003930729318748456,
+      "blockingMs": 68,
+      "initialBytes": 365917,
+      "tasks": [
+        {
+          "time": 1823.2000000476837,
+          "duration": 118
+        }
+      ],
+      "initialCls": 0.0003930729318748456,
+      "shifts": [
+        {
+          "time": 2297.900000035763,
+          "value": 0.0003930729318748456,
+          "sources": [
+            {
+              "previous": {
+                "x": 20,
+                "y": 240.609375,
+                "width": 350,
+                "height": 46,
+                "top": 240.609375,
+                "right": 370,
+                "bottom": 286.609375,
+                "left": 20
+              },
+              "current": {
+                "x": 20,
+                "y": 246.609375,
+                "width": 350,
+                "height": 46,
+                "top": 246.609375,
+                "right": 370,
+                "bottom": 292.609375,
+                "left": 20
+              }
+            }
+          ]
+        }
+      ],
+      "tapMs": 48,
+      "frameP95Ms": 16.700000000000728,
+      "scrollStalls": 0,
+      "frameCount": 752,
+      "passed": true
+    },
+    {
+      "run": 3,
+      "fcpMs": 1220,
+      "lcpMs": 1560,
+      "lcpElements": [
+        {
+          "time": 1220,
+          "size": 27473,
+          "element": "<h1>Больше уверенности<br> <span class=\"soft-emphasis\">в сложных разговорах.</span></h1>",
+          "url": ""
+        },
+        {
+          "time": 1560,
+          "size": 73206,
+          "element": "<img class=\"mobile-hero\" src=\"assets/hero-mobile.webp\" width=\"640\" height=\"610\" alt=\"\" aria-hidden=\"true\" decoding=\"async\" fetchpriority=\"high\">",
+          "url": "http://a0091381.xsph.ru/v2/assets/hero-mobile.avif"
+        }
+      ],
+      "cls": 0.01772203801727966,
+      "blockingMs": 150,
+      "initialBytes": 365917,
+      "tasks": [
+        {
+          "time": 1786.5,
+          "duration": 139
+        },
+        {
+          "time": 1929.2000000476837,
+          "duration": 111
+        }
+      ],
+      "initialCls": 0.01772203801727966,
+      "shifts": [
+        {
+          "time": 2028.800000011921,
+          "value": 0.017328965085404813,
+          "sources": [
+            {
+              "element": "<div class=\"art-orbit orbit-one\"></div>",
+              "previous": {
+                "x": 20,
+                "y": 564.7858276367188,
+                "width": 341.1202697753906,
+                "height": 279.21417236328125,
+                "top": 564.7858276367188,
+                "right": 361.1202697753906,
+                "bottom": 844,
+                "left": 20
+              },
+              "current": {
+                "x": 28.397836685180664,
+                "y": 589.4515380859375,
+                "width": 341.6021728515625,
+                "height": 254.5484619140625,
+                "top": 589.4515380859375,
+                "right": 370.00000953674316,
+                "bottom": 844,
+                "left": 28.397836685180664
+              }
+            },
+            {
+              "element": "<div class=\"hero-art\" aria-label=\"Вращающаяся модель сознания — образ внутреннего пространства\">\n        <div class=\"art-orbit orbit-one\"></div><div class=\"art-orbit orbit-two\"></d",
+              "previous": {
+                "x": 20,
+                "y": 595.390625,
+                "width": 350,
+                "height": 248.609375,
+                "top": 595.390625,
+                "right": 370,
+                "bottom": 844,
+                "left": 20
+              },
+              "current": {
+                "x": 20,
+                "y": 621.78125,
+                "width": 350,
+                "height": 222.21875,
+                "top": 621.78125,
+                "right": 370,
+                "bottom": 844,
+                "left": 20
+              }
+            },
+            {
+              "element": "<div class=\"actions\"><button class=\"button\" data-apply=\"\">Узнать даты и условия <span>↗</span></button><a class=\"text-link\" href=\"#program\">Как проходит тренинг <span>↓</span></a><",
+              "previous": {
+                "x": 20,
+                "y": 415.890625,
+                "width": 350,
+                "height": 113,
+                "top": 415.890625,
+                "right": 370,
+                "bottom": 528.890625,
+                "left": 20
+              },
+              "current": {
+                "x": 20,
+                "y": 442.28125,
+                "width": 350,
+                "height": 113,
+                "top": 442.28125,
+                "right": 370,
+                "bottom": 555.28125,
+                "left": 20
+              }
+            },
+            {
+              "previous": {
+                "x": 20,
+                "y": 342.109375,
+                "width": 350,
+                "height": 45.390625,
+                "top": 342.109375,
+                "right": 370,
+                "bottom": 387.5,
+                "left": 20
+              },
+              "current": {
+                "x": 20,
+                "y": 367.5,
+                "width": 350,
+                "height": 45.390625,
+                "top": 367.5,
+                "right": 370,
+                "bottom": 412.890625,
+                "left": 20
+              }
+            },
+            {
+              "element": "<div class=\"hero-facts\"><span>12 академических часов · Очно или онлайн</span></div>",
+              "previous": {
+                "x": 20,
+                "y": 550.890625,
+                "width": 350,
+                "height": 16.5,
+                "top": 550.890625,
+                "right": 370,
+                "bottom": 567.390625,
+                "left": 20
+              },
+              "current": {
+                "x": 20,
+                "y": 577.28125,
+                "width": 350,
+                "height": 16.5,
+                "top": 577.28125,
+                "right": 370,
+                "bottom": 593.78125,
+                "left": 20
+              }
+            }
+          ]
+        },
+        {
+          "time": 2289.900000035763,
+          "value": 0.0003930729318748456,
+          "sources": [
+            {
+              "previous": {
+                "x": 20,
+                "y": 240.609375,
+                "width": 350,
+                "height": 46,
+                "top": 240.609375,
+                "right": 370,
+                "bottom": 286.609375,
+                "left": 20
+              },
+              "current": {
+                "x": 20,
+                "y": 246.609375,
+                "width": 350,
+                "height": 46,
+                "top": 246.609375,
+                "right": 370,
+                "bottom": 292.609375,
+                "left": 20
+              }
+            }
+          ]
+        }
+      ],
+      "tapMs": 88,
+      "frameP95Ms": 16.700000000000728,
+      "scrollStalls": 0,
+      "frameCount": 750,
+      "passed": true
+    }
+  ],
+  "error": null
+}

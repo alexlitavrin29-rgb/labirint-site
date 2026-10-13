@@ -1,0 +1,19 @@
+NEON BRAIN — SOURCE AND LICENSING NOTE
+
+Source geometry: `brain.blend`, supplied directly by the project owner on 2026-08-28.
+The Blender file contains no author, source URL, copyright notice, or license metadata.
+Targeted web searches using the embedded texture names did not identify a reliable source.
+
+Because the original license cannot be inferred from geometry, this file does not claim that
+the mesh is public-domain or Creative Commons. The project owner should confirm that they have
+the right to publish the supplied source model before production release.
+
+Processing performed for this prototype:
+- removed one exact duplicate mesh;
+- centered and normalized transforms;
+- triangulated and lightly decimated the surface;
+- replaced missing source textures with original neon palette materials;
+- exported as glTF 2.0 GLB.
+
+Three.js 0.179.1 is distributed under the MIT License. Its license is stored at:
+../../vendor/three/LICENSE.txt

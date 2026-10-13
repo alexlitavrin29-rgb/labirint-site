@@ -1,0 +1,24 @@
+{
+  "url": "http://a0091381.xsph.ru/v2/?theme=blue",
+  "conditions": {
+    "width": 390,
+    "height": 844,
+    "dpr": 3,
+    "cpuSlowdown": 4,
+    "downloadBytesPerSecond": 200000,
+    "latencyMs": 150,
+    "coldCache": true,
+    "freshBrowserPerRun": true,
+    "pinnedIPv4": false
+  },
+  "limits": {
+    "lcpMs": 2500,
+    "cls": 0.1,
+    "blockingMs": 200,
+    "tapMs": 200,
+    "frameP95Ms": 33.5,
+    "scrollStalls": 0
+  },
+  "results": [],
+  "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://a0091381.xsph.ru/v2/?theme=blue\", waiting until \"domcontentloaded\"\u001b[22m\n"
+}

@@ -1,0 +1,85 @@
+/* Constrained space creates tension inside the landing page's light palette. */
+.home-page .pitch-scroll {
+  position:relative;background:var(--blue);color:var(--ink);
+  margin-top:80px;isolation:isolate;
+}
+.home-page .pitch-scene{position:relative;z-index:1}
+.home-page .pitch-heading>span,.home-page .pitch-bottom{color:var(--muted)}
+.home-page .pitch-progress{background:color-mix(in srgb,var(--ink) 18%,transparent)}
+.home-page .pitch-progress i{background:var(--ink)}
+.home-page .pitch-heading .eyebrow{color:inherit}
+.home-page .pitch-title {
+  font-weight:800;letter-spacing:-.055em;position:relative;z-index:2;line-height:1.15;
+}
+.home-page .pitch-agreed {
+  background:var(--paper);color:var(--ink);border-radius:8px;
+  padding:.025em .09em .085em;border-bottom:4px solid var(--accent);
+  box-shadow:0 5px 0 color-mix(in srgb,var(--ink) 7%,transparent);
+  transform-origin:left center;
+}
+.home-page .pitch-justified {
+  color:transparent;-webkit-text-stroke:1.4px var(--ink);margin-top:.14em;
+}
+.home-page .pitch-rumination p {
+  font-weight:500;letter-spacing:-.045em;position:relative;z-index:2;
+}
+.home-page .pitch-thought-last {
+  font-family:Caveat,cursive;font-style:normal;font-weight:500;
+  font-size:1.35em;letter-spacing:-.035em;
+}
+.pressure-decor{display:none;position:absolute;inset:-4% -2%;pointer-events:none;z-index:-1}
+.is-pitch-animated .pressure-decor{display:block}
+.pressure-frame {
+  position:absolute;inset:5% 0;border:1px solid color-mix(in srgb,var(--ink) 15%,transparent);
+  border-radius:14px;
+}
+.frame-outer{inset:1% -2%;border-color:color-mix(in srgb,var(--ink) 10%,transparent)}
+.frame-inner{inset:12% 3%;border-width:2px;border-color:color-mix(in srgb,var(--ink) 24%,transparent)}
+.pressure-rail {
+  position:absolute;top:25%;bottom:25%;width:clamp(12px,2.2vw,32px);
+  background:color-mix(in srgb,var(--paper) 70%,var(--blue));
+  border:1px solid color-mix(in srgb,var(--ink) 24%,transparent);border-radius:9px;
+}
+.rail-left{left:1%}.rail-right{right:1%}
+.pressure-rail i{position:absolute;inset:24% 3px;border-radius:5px;background:var(--accent);opacity:.55}
+.pressure-demand {
+  position:absolute;white-space:nowrap;font-size:clamp(13px,1.45vw,21px);font-weight:500;
+  color:color-mix(in srgb,var(--ink) 65%,var(--blue));letter-spacing:-.025em;
+  background:var(--surface);padding:7px 13px;
+  border:1px solid color-mix(in srgb,var(--ink) 17%,transparent);border-radius:9px;
+}
+.demand-one{top:3%;left:6%;transform:rotate(-2deg)}
+.demand-two{top:8%;right:4%;transform:rotate(2deg)}
+.demand-three{bottom:5%;right:8%;transform:rotate(-1deg)}
+.pressure-echoes{position:absolute;inset:0;overflow:hidden;opacity:0}
+.pressure-echoes span {
+  position:absolute;width:max-content;color:color-mix(in srgb,var(--ink) 12%,transparent);
+  font-size:clamp(35px,5.5vw,85px);font-weight:650;letter-spacing:-.05em;white-space:nowrap;
+}
+.pressure-echoes span:nth-child(1){top:4%;left:-4%;transform:rotate(-2deg)}
+.pressure-echoes span:nth-child(2){bottom:7%;right:-4%;transform:rotate(2deg)}
+.pressure-echoes span:nth-child(3){bottom:1%;left:8%;font-size:clamp(24px,3vw,44px);opacity:.4}
+.home-page .pitch-explanation{color:var(--ink)}
+.home-page .pitch-scroll .statement-choice-copy em{color:inherit}
+.home-page .training-bridge .practice-layout{grid-template-columns:1.35fr .8fr;gap:70px}
+.home-page .training-bridge h2{font-size:clamp(40px,4.2vw,64px)}
+.home-page .training-bridge .body-text{font-size:22px;max-width:440px;margin:0;color:var(--ink);line-height:1.6}
+.home-page .training-bridge{padding-top:85px}
+.home-page .expert-photo img{filter:none}
+@media(max-width:760px) {
+  .home-page .pitch-scroll{margin-top:60px}
+  .home-page .pitch-title{font-size:7.55vw}
+  .home-page .pitch-agreed{border-bottom-width:2px;box-shadow:0 3px 0 color-mix(in srgb,var(--ink) 7%,transparent);border-radius:5px}
+  .home-page .pitch-justified{-webkit-text-stroke:1px var(--ink)}
+  .home-page .pitch-thought-last{font-size:1.35em}
+  .pressure-decor{inset:0 -2%}.pressure-frame{inset:6% 0}.frame-inner{inset:16% 2%}
+  .pressure-rail{width:10px;top:30%;bottom:30%;border-radius:4px}.pressure-rail i{inset-inline:2px}
+  .pressure-demand{font-size:11px;padding:5px 7px;border-radius:6px}
+  .demand-one{top:4%;left:4%}.demand-two{top:14%;right:2%}.demand-three{bottom:8%;right:5%}
+  .pressure-echoes span:nth-child(1){top:10%;left:-10%;font-size:33px}
+  .pressure-echoes span:nth-child(2){bottom:9%;right:-7%;font-size:36px}
+  .pressure-echoes span:nth-child(3){bottom:3%;font-size:24px}
+  .home-page .training-bridge .practice-layout{grid-template-columns:1fr;gap:30px}
+  .home-page .training-bridge h2{font-size:34px}.home-page .training-bridge .body-text{font-size:20px}
+  .home-page .training-bridge{padding-top:65px}
+}

@@ -1,0 +1,8 @@
+.local-backups/
+.preview/
+.DS_Store
+node_modules/
+.env
+.env.*
+!.env.example
+literature_search/

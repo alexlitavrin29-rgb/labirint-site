@@ -1,0 +1,57 @@
+/* Four distinct movements turn the personal question into a path of action. */
+.home-page .method-premise{background:var(--paper);padding:100px 0 55px}
+.home-page .method-premise .practice-layout{grid-template-columns:1.2fr .8fr;gap:100px;align-items:end}
+.home-page .method-premise h2{font-size:clamp(42px,4.3vw,66px)}
+.home-page .method-premise .practice-layout .method-promise{font-size:27px;line-height:1.35;margin-top:30px;max-width:560px;font-weight:500}
+.manipulator-note{background:var(--blue);border-radius:24px;padding:30px 32px;border-left:6px solid var(--accent)}
+.home-page .method-premise .practice-layout .manipulator-note .body-text{font-size:19px;line-height:1.45;color:var(--ink)}
+.manipulator-note strong{display:block;font-size:30px;line-height:1.25;font-weight:650;margin-top:12px;letter-spacing:-.04em}
+.home-page .method-premise .practice-layout .manipulator-detail{font-size:17px;line-height:1.6;margin-top:22px;color:var(--muted)}
+.skills-section{background:var(--paper);color:var(--ink);overflow:clip;padding:45px 0 80px}
+.skills-heading{display:block;text-align:center}
+.skills-heading .eyebrow{margin:0 auto}
+.skills-heading h2{font-size:clamp(36px,4vw,58px);line-height:1.15;margin-top:14px;font-weight:650}
+.skills-stage{position:relative;min-width:0;margin-block:40px}
+.skill-beat{position:relative;display:flex;align-items:center;gap:50px;padding:55px 40px;border-top:1px solid var(--line);min-width:0}
+.skill-number{font-size:clamp(60px,8vw,120px);font-weight:700;line-height:1;letter-spacing:-.06em;color:transparent;-webkit-text-stroke:1px var(--ink);opacity:.35;flex-shrink:0}
+.skill-copy{min-width:0;max-width:100%}.skill-copy h3{font-size:clamp(44px,5vw,78px);font-weight:750;line-height:1.1;letter-spacing:-.055em}
+.skill-copy p{font-size:20px;color:var(--muted);line-height:1.5;margin-top:28px;max-width:620px}
+.skill-word,.control-line,.neutralize-line{display:block}
+.skill-scan{display:none}.is-skills-animated .skill-scan{display:block;position:absolute;top:0;left:0;width:4px;height:1.1em;border-radius:3px;background:var(--accent);pointer-events:none}
+.skill-space{display:none}.skills-footer{font-size:12px;color:var(--muted);display:flex;align-items:center;justify-content:space-between;gap:25px}
+.skill-track{display:flex;gap:10px;width:230px}.skill-track i{height:3px;flex:1;background:var(--line);overflow:hidden}.skill-track b{display:block;height:100%;background:var(--ink);transform:scaleX(0);transform-origin:left}
+.is-skills-animated{padding-block:0}
+.is-skills-animated .skills-scene{height:calc(100svh - var(--skills-header,96px));min-height:0;padding-block:35px;display:flex;flex-direction:column}
+.is-skills-animated .skills-heading,.is-skills-animated .skills-footer{flex-shrink:0}
+.is-skills-animated .skills-stage{flex:1;min-height:0;margin-block:25px 0}
+.is-skills-animated .skill-beat{position:absolute;inset:0;border:0;padding:40px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:30px;pointer-events:none}
+.is-skills-animated .skill-number{font-size:clamp(48px,min(7vw,calc(15svh - 52px)),108px)}
+.is-skills-animated .skill-copy h3{font-size:clamp(42px,min(6.25vw,calc(12svh - 28px)),100px);position:relative;z-index:1}
+.is-skills-animated .skill-copy h3::after{content:'';display:block;width:90px;height:7px;border-radius:4px;background:var(--accent);margin:30px auto 0}
+.is-skills-animated .skill-copy p{margin:25px auto 0}
+.is-skills-animated .skill-space{display:block;position:absolute;inset:10% 0;pointer-events:none}
+.skill-edge{position:absolute;top:0;bottom:0;width:32px;border-block:1px solid var(--line)}
+.edge-left{left:0;border-left:2px solid var(--ink);border-radius:14px 0 0 14px}.edge-right{right:0;border-right:2px solid var(--ink);border-radius:0 14px 14px 0}
+.skill-space-note{display:none;font-size:10px;line-height:1.4;letter-spacing:.04em;color:var(--muted);text-align:center}
+.is-skills-animated .skill-space-note{display:block;flex-shrink:0;margin:60px 0 18px}
+.home-page .training-result .practice-layout{grid-template-columns:1.2fr .8fr;gap:85px;align-items:center}
+.home-page .training-result .text-link{margin-top:26px;display:inline-block}
+.home-page .program-intro .situation-cta{background:var(--accent);color:var(--accent-ink);white-space:normal;gap:24px;text-align:left}
+@media(max-width:1100px){.home-page .method-premise .practice-layout,.home-page .training-result .practice-layout{gap:45px}.skill-beat{gap:25px;padding-inline:20px}.skill-copy h3{font-size:clamp(36px,4.7vw,65px)}}
+@media(max-width:760px){
+ .home-page .method-premise{padding:65px 0 30px}.home-page .method-premise .practice-layout,.home-page .training-result .practice-layout{grid-template-columns:1fr;gap:30px}
+ .home-page .method-premise h2{font-size:clamp(34px,8vw,48px)}.home-page .method-premise .practice-layout .method-promise{font-size:23px;margin-top:25px}
+ .manipulator-note{padding:25px 22px;border-left-width:4px}.manipulator-note strong{font-size:27px}.home-page .method-premise .practice-layout .manipulator-note .body-text{font-size:17px}.home-page .method-premise .practice-layout .manipulator-detail{font-size:16px}
+ .skills-section{padding:35px 0 65px}.skills-heading .eyebrow{font-size:10px;max-width:230px}
+ .skills-heading h2{font-size:30px;margin-top:10px}
+ .skill-beat{flex-direction:column;align-items:flex-start;gap:25px;padding:40px 0}.skill-number{font-size:64px}.skill-copy h3{font-size:clamp(30px,7.8vw,52px);overflow-wrap:break-word}.skill-copy p{font-size:17px;margin-top:20px}
+ .skills-stage{margin-block:25px}.skills-footer{font-size:10px;flex-direction:column;align-items:flex-start;gap:15px}.skill-track{width:100%}
+ .is-skills-animated{padding:0}.is-skills-animated .skills-scene{padding-block:24px}.is-skills-animated .skills-stage{margin-block:18px}
+ .is-skills-animated .skill-beat{padding:25px 0;gap:30px}.is-skills-animated .skill-number{font-size:76px}
+ .is-skills-animated .skill-copy h3{font-size:clamp(30px,7.7vw,56px);line-height:1.15}.is-skills-animated .skill-copy h3::after{height:5px;width:65px;margin-top:22px}.is-skills-animated .skill-copy p{font-size:17px;max-width:310px;margin-top:22px}
+ .is-skills-animated .skill-space{inset:2% 0}.skill-edge{width:15px;opacity:.4}.is-skills-animated .skill-space-note{display:none}
+ .home-page .training-result{padding-top:70px}
+}
+@media(max-height:850px) and (min-width:761px){.skills-heading h2{font-size:34px;margin-top:8px}.is-skills-animated .skills-scene{padding-block:24px}.is-skills-animated .skill-beat{gap:24px;padding:10px 30px}.is-skills-animated .skill-copy h3::after{margin-top:18px;height:5px}.is-skills-animated .skill-copy p{font-size:18px;margin-top:18px}}
+@media(max-height:700px) and (min-width:761px){.skills-heading h2{font-size:30px}.is-skills-animated .skills-scene{padding-block:20px}.is-skills-animated .skill-beat{padding:8px 25px}.is-skills-animated .skill-number{font-size:44px}.is-skills-animated .skill-copy h3{font-size:48px}.is-skills-animated .skill-copy h3::after{margin-top:14px}.is-skills-animated .skill-copy p{margin-top:14px}}
+@media(max-height:670px) and (max-width:760px){.skills-heading h2{font-size:26px}.is-skills-animated .skills-scene{padding-block:20px}.is-skills-animated .skills-stage{margin-block:12px}.is-skills-animated .skill-beat{gap:24px;padding:12px 0}.is-skills-animated .skill-number{font-size:48px}.is-skills-animated .skill-copy p{font-size:16px;margin-top:12px}.is-skills-animated .skill-copy h3::after{margin-top:12px}}

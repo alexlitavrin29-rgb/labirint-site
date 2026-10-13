@@ -1,0 +1,63 @@
+{
+  "url": "http://a0091381.xsph.ru/v2/?theme=blue",
+  "conditions": {
+    "width": 390,
+    "height": 844,
+    "dpr": 3,
+    "cpuSlowdown": 4,
+    "downloadBytesPerSecond": 200000,
+    "latencyMs": 150,
+    "coldCache": true
+  },
+  "limits": {
+    "lcpMs": 2500,
+    "cls": 0.1,
+    "blockingMs": 200,
+    "tapMs": 200,
+    "frameP95Ms": 33.5,
+    "scrollStalls": 0
+  },
+  "results": [
+    {
+      "run": 1,
+      "fcpMs": 1648,
+      "lcpMs": 2924,
+      "lcpElements": [
+        {
+          "time": 1648,
+          "size": 27473,
+          "element": "<h1>Больше уверенности<br> <span class=\"soft-emphasis\">в сложных разговорах.</span></h1>",
+          "url": ""
+        },
+        {
+          "time": 2924,
+          "size": 73206,
+          "element": "<img class=\"mobile-hero\" src=\"assets/hero-mobile.webp\" width=\"640\" height=\"610\" alt=\"\" aria-hidden=\"true\" decoding=\"async\" fetchpriority=\"high\" style=\"translate: none; rotate: none",
+          "url": "http://a0091381.xsph.ru/v2/assets/hero-mobile.webp"
+        }
+      ],
+      "cls": 0.01772203801727966,
+      "blockingMs": 77,
+      "initialBytes": 722338,
+      "tasks": [
+        {
+          "time": 1765.199999988079,
+          "duration": 54
+        },
+        {
+          "time": 4121.199999988079,
+          "duration": 52
+        },
+        {
+          "time": 4376.600000023842,
+          "duration": 121
+        }
+      ],
+      "tapMs": 96,
+      "frameP95Ms": 16.700000000000728,
+      "scrollStalls": 0,
+      "frameCount": 739,
+      "passed": false
+    }
+  ]
+}

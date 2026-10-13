@@ -1,0 +1,75 @@
+/* Approved copy, generous reading space, and one interactive pause. */
+.home-page .hero h1{font-size:clamp(38px,3.7vw,56px);margin-right:0;line-height:1.09}
+.home-page .hero-description{margin:22px 0;font-size:18px;max-width:550px}
+.hero-practice{display:flex;align-items:center;gap:16px;margin-bottom:24px;line-height:1.4;font-size:13px}
+.hero-practice strong{font-size:34px;letter-spacing:-.06em;font-weight:600}
+.home-page .hero-facts{flex-direction:column;gap:6px;margin-top:22px}
+.home-page .hero .actions{gap:15px}.home-page .hero .button{font-size:13px;gap:18px;padding-inline:22px}
+.next-meta p{font-size:16px;line-height:1.6}.next-group .text-link{white-space:normal}
+.is-skills-animated .skill-copy p{max-width:740px;font-size:20px;line-height:1.6}
+.is-skills-animated .skill-copy h3{font-size:clamp(40px,min(5.8vw,calc(11svh - 26px)),86px)}
+.skill-copy h3{overflow-wrap:normal}.skill-copy p{max-width:700px}
+.home-page .program-intro h2{font-size:clamp(36px,3.3vw,49px)}
+.home-page .program-intro .situation-cta{font-size:13px;gap:12px}
+.programme-test{position:relative;z-index:2;padding-top:45px;max-width:1280px}
+.programme-test strong{font-size:19px;font-weight:600}.programme-test p{font-size:17px;line-height:1.65;margin-top:10px;max-width:780px}
+.pause-demo{margin-top:60px;border:1px solid var(--line);background:var(--surface);border-radius:32px;display:grid;grid-template-columns:1.1fr 1fr;gap:35px;align-items:center;padding:40px;overflow:hidden}
+.pause-diagram{position:relative;min-width:0;aspect-ratio:640/420}
+.pause-diagram svg{display:block;width:100%;height:100%;fill:none;stroke:var(--ink);stroke-width:1}
+.pause-ring{opacity:.3}.pause-path{stroke-dasharray:3 8;opacity:.22}
+.pause-core{position:absolute;left:50%;top:50%;translate:-50% -50%;border-radius:50%;width:132px;height:132px;display:grid;place-items:center;background:var(--paper);border:1px solid var(--line);font-family:Caveat,cursive;font-size:32px}
+.pause-demand{position:absolute;z-index:1;padding:9px 13px;font-size:13px;line-height:1.4;max-width:200px;background:var(--paper);border:1px solid var(--line);border-radius:12px}
+.pause-demand.demand-left{left:0;top:23%}.pause-demand.demand-right{right:0;bottom:22%}
+.pause-content h3{font-size:clamp(29px,3.1vw,45px);line-height:1.2}.pause-content>p:not(.eyebrow){font-size:17px;line-height:1.6;margin-top:22px}
+.pause-content .button{margin-top:24px}.pause-content .button[hidden]{display:none}
+.pause-options{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}
+.pause-choice{font-size:13px;line-height:1.4;border:1px solid var(--line);background:var(--paper);padding:9px 12px;border-radius:30px}
+.pause-content .pause-status{min-height:52px;font-size:13px!important;margin-top:14px!important;color:var(--muted)}
+.exercise-proof{margin-top:28px;padding:28px 32px;border:1px dashed var(--line);border-radius:20px;background:var(--paper);position:relative}
+.exercise-proof .eyebrow{margin-bottom:10px}.exercise-proof>p:not(.eyebrow){font-size:20px;font-weight:500}.material-pending{display:inline-block;font-size:12px;color:var(--muted);line-height:1.6;margin-top:10px}
+.expert-evidence{padding:32px;background:var(--surface);border-radius:var(--radius);align-self:stretch;display:flex;flex-direction:column;justify-content:center;gap:20px}
+.expert-evidence>.eyebrow{margin-bottom:0}.expert-evidence h3{font-size:32px;line-height:1.25}.expert-evidence .exercise-proof{margin-top:0}
+.review-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}.review-slot{padding:35px;border:1px solid var(--line);border-radius:24px;background:var(--paper)}
+.review-slot .quote-mark{font-size:75px;line-height:.7;display:block;margin-bottom:20px}.review-slot h3{font-size:25px;line-height:1.3}
+.approved-formats{grid-template-columns:1fr 1fr}.approved-pricing{display:block}.approved-pricing>.conditions-table-wrap{margin-top:40px}
+.conditions-table-wrap{border:1px solid var(--line);border-radius:24px;overflow:hidden;background:var(--paper)}
+.conditions-table{width:100%;table-layout:fixed;border-collapse:collapse;font-size:16px;line-height:1.6;text-align:left}
+.conditions-table th,.conditions-table td{padding:20px 24px;border-bottom:1px solid var(--line);vertical-align:top;overflow-wrap:anywhere}
+.conditions-table thead{background:var(--surface)}.conditions-table th{font-weight:600}.conditions-table th:first-child{width:34%}
+.conditions-note{font-size:14px;padding:25px;color:var(--muted)}
+.enquiry-steps{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin:40px auto;padding:0;text-align:left;max-width:1050px}
+.enquiry-steps li{font-size:17px;line-height:1.65;border-top:1px solid var(--line);padding-top:18px}.enquiry-steps span{display:block;font-family:Caveat,cursive;font-size:34px;margin-bottom:10px}
+.closing .closing-note{font-size:14px;margin-top:25px}.closing h2{max-width:950px;margin-inline:auto}
+.apply-dialog select{font:inherit;font-size:16px;width:100%;padding:13px 16px;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:10px;margin-top:8px}
+.field-optional{font-size:11px;font-weight:400;color:var(--muted);margin-left:8px}
+.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(min-width:761px) and (max-height:850px){
+ .home-page .hero h1{font-size:clamp(36px,3.6vw,53px)}.home-page .hero-description{font-size:16px;margin-block:16px}.hero-practice{margin-bottom:16px}.home-page .hero-facts{margin-top:16px}
+ .is-skills-animated .skill-copy p{font-size:18px;max-width:680px}.is-skills-animated .skill-copy h3{font-size:clamp(40px,5vw,68px)}
+ .is-skills-animated .skill-space-note{margin-top:60px}
+ .home-page .program-intro h2{font-size:36px}.home-page .program-intro>p:not(.eyebrow){font-size:17px}
+}
+@media(max-width:1100px){.pause-demo{gap:20px;padding:28px}.pause-core{width:100px;height:100px;font-size:27px}.pause-demand{font-size:11px;max-width:150px}.conditions-table th,.conditions-table td{padding:17px}}
+@media(max-width:760px){
+ .home-page .hero h1{font-size:clamp(34px,8vw,49px);line-height:1.12}.home-page .hero-description{font-size:16px;margin:20px 0}.hero-practice{font-size:12px;gap:14px;margin-bottom:22px}.hero-practice strong{font-size:31px}
+ .home-page .hero .actions{gap:15px}.home-page .hero .button{font-size:12px;padding:15px 20px;gap:14px;max-width:100%;text-align:left}.home-page .hero-facts{margin-top:20px;font-size:10px}
+ .next-meta p{font-size:15px}.skill-copy p{font-size:17px;line-height:1.65}
+ .pause-demo{grid-template-columns:1fr;margin-top:35px;padding:24px 20px;border-radius:24px;gap:20px}
+ .pause-diagram{max-width:440px;width:100%;margin:auto}.pause-demand{max-width:135px;font-size:10px;padding:7px 9px}.pause-core{width:92px;height:92px;font-size:24px}
+ .pause-content h3{font-size:32px}.pause-content .eyebrow{font-size:10px;margin-bottom:15px}.pause-content>p:not(.eyebrow){font-size:16px;margin-top:18px}
+ .pause-options{gap:8px}.pause-choice{font-size:12px;padding:8px 10px}.pause-content .pause-status{min-height:42px}
+ .exercise-proof{padding:22px}.exercise-proof>p:not(.eyebrow){font-size:18px}.exercise-proof .eyebrow{font-size:9px}
+ .programme-test{padding-top:28px}.programme-test strong{font-size:17px}.programme-test p{font-size:16px}
+ .expert-evidence{padding:26px;gap:20px}.expert-evidence h3{font-size:27px}.expert-evidence .text-link{font-size:13px}
+ .review-grid,.approved-formats{grid-template-columns:1fr}.review-slot{padding:28px}.review-slot h3{font-size:23px}
+ .conditions-table{font-size:12px;line-height:1.5}.conditions-table th,.conditions-table td{padding:13px 9px}.conditions-note{padding:20px;font-size:13px}
+ .enquiry-steps{grid-template-columns:1fr;gap:22px;margin-block:30px}.enquiry-steps li{font-size:16px;padding-top:14px}.enquiry-steps span{font-size:28px;margin-bottom:5px}
+ .closing .button{max-width:100%;font-size:12px;text-align:left;gap:12px;padding-inline:22px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}.button:hover{transform:none}}
+
+.hero-no-break{white-space:nowrap}
+.home-page .hero h1 .soft-emphasis{font-size:1.1em}
+@media(min-width:761px) and (max-height:700px){
+ .is-skills-animated .skill-copy h3{font-size:clamp(36px,4vw,48px)}
+}
